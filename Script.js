@@ -1,5 +1,7 @@
 // JavaScript source code
-let pages = ["homeContent", "menuContent", "aboutContent"]
+let pages = ["homeContent", "menuContent", "aboutContent"];
+let pizzaNames = ["Cheese pizza", "Hawaiian pizza", "Pepperoni pizza", "Supreme pizza"];
+let pizzaImages = ["cheese pizza.png", "hawaiian pizza.png", "pepperoni pizza 2.png", "supreme pizza 2.png"];
 
 var myIndex = 0;
 carousel();
@@ -13,7 +15,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) { myIndex = 1 }
     x[myIndex - 1].style.display = "block";
-    setTimeout(carousel, 7000);
+    setTimeout(carousel, 5000);
 }
 
 function changeToHome() {
@@ -33,6 +35,7 @@ function changeToMenu() {
 	//document.getElementById("sectionHeader").innerHTML = "Menu";
 	let currentPage = pages.indexOf("menuContent");
 	let element = document.getElementById("menuContent");
+	const section = document.getElementById('menuSection');
 	element.removeAttribute("hidden", "hidden");
 	for (let i = 0; i < pages.length; i++) {
 		if (i != currentPage) {
@@ -40,6 +43,7 @@ function changeToMenu() {
 			element.setAttribute("hidden", "hidden");
 		}
 	}
+	getPizzas(section);
 }
 
 function changeToAbout() {
@@ -53,4 +57,27 @@ function changeToAbout() {
 			element.setAttribute("hidden", "hidden");
 		}
 	}
+}
+
+function getPizzas(section) {
+	while (section.firstChild) {
+		section.removeChild(section.firstChild);
+	}
+	for (let i = 0; i < pizzaNames.length; i++) {
+		showPizza(pizzaNames[i], pizzaImages[i]);
+	}
+}
+
+function showPizza(pizzaName, pizzaImage) {
+	const name = document.createElement('p');
+	const image = document.createElement('img');
+	const pizzaSection = document.createElement('section');
+	const section = document.getElementById('menuSection');
+	name.textContent = pizzaName;
+	image.src = pizzaImage;
+	image.setAttribute('width', '170');
+	image.setAttribute('height', '150');
+	section.appendChild(pizzaSection);
+	pizzaSection.appendChild(name);
+	pizzaSection.appendChild(image);
 }
