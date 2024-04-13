@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa's Pizzeria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href='pizza.png'>
+</head>
+<body>
+    <!-- Navbar -->
+    <section>
+    <img class="image" src="pizza.png" alt="pizza logo" onclick="changeToHome()" width="64" height="64" style="cursor:pointer;" title="Papa's Pizzeria">
+    <button type="button" class="button button-hover" onclick="changeToAbout()">ABOUT US</button>
+    <button type="button" class="button button-hover" onclick="changeToMenu()">EXPLORE OUR MENU</button>
+    </section>
+
+    <!-- Page content -->
+    <div class="home" id="homeContent">
+        <div class="pageTitle" id="sectionHeader">
+            <h1>Pizza Paradise</h1>
+        </div>
+        <p>Welcome to Pizza Paradise!</p>
+        <!-- Rotating pizzas-->
+        <div class="mySlides text-fading">
+            <img src="pizza.png" alt="a pizza" width="150" height="150" style="cursor:pointer;" title="Regular pizza">
+            <p>A pizza</p>
+        </div>
+        <div class="mySlides text-fading">
+            <img src="italian pizza.png" alt="a pizza" width="150" height="150" style="cursor:pointer;" title="Italian pizza">
+            <p>Italian pizza</p>
+        </div>
+        <div class="mySlides text-fading">
+            <img src="pepperoni pizza.png" alt="a pizza" width="150" height="150" style="cursor:pointer;" title="Pepperoni pizza">
+            <p>Pepperoni pizza</p>
+        </div>
+        <div class="mySlides text-fading">
+            <img src="supreme pizza.png" alt="a pizza" width="150" height="150" style="cursor:pointer;" title="Supreme pizza">
+            <p>Supreme pizza</p>
+        </div>
+        <p>Some of our delicious pizzas.</p>
+    </div>
+
+    <div hidden="hidden" id="menuContent">
+        <div class="pageTitle" id="sectionHeader">
+            <h1>Menu</h1>
+        </div>
+        <p>Check out some of our delicious homemade pizzas.</p>
+    </div>
+
+    <div hidden="hidden" id="aboutContent">
+        <div class="pageTitle" id="sectionHeader">
+            <h1>About Us</h1>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p class="footer-text">Check out our social media!</p>
+        <img class="image" src="facebook icon.png" alt="facebook" onclick="changeToHome()" width="50" height="50">
+        <img class="image" src="twitter icon.png" alt="facebook" onclick="changeToHome()" width="50" height="50">
+        <img class="image" src="pinterest icon.png" alt="facebook" onclick="changeToHome()" width="50" height="50">
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
