@@ -6,4 +6,5 @@ A simple website that I made for practice
 - About us
 
 Facebook and Twitter icons by [Icons8](https://icons8.com/)
+
 Tab icon, background image and pizza images by me
