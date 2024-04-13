@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="icon" href='pepperoni pizza.png'>
 </head>
 <body>
     <!-- Navbar -->
-    <section>
+    <section id="navbar">
     <img class="image" src="pepperoni pizza.png" alt="pizza logo" onclick="changeToHome()" width="74" height="64" style="cursor:pointer;" title="Pizza Paradise">
+    <button type="button" class="button button-hover" onclick="changeToHome()">HOME</button>
     <button type="button" class="button button-hover" onclick="changeToAbout()">ABOUT US</button>
     <button type="button" class="button button-hover" onclick="changeToMenu()">EXPLORE OUR MENU</button>
     </section>
@@ -42,7 +44,7 @@
             <img src="supreme pizza.png" alt="a pizza" width="170" height="150" style="cursor:pointer;" title="Supreme pizza">
             <p>Supreme pizza</p>
         </div>
-        <p>A pizza made in paradise!</p>
+        <p>Pizza made in paradise!</p>
     </div>
 
     <div hidden="hidden" id="menuContent">
@@ -63,10 +65,9 @@
 
     <!-- Footer -->
     <div class="footer">
-        <p class="footer-text">Check out our social media!</p>
-        <img class="image" src="facebook icon.png" alt="facebook" onclick="changeToHome()" width="50" height="50">
-        <img class="image" src="twitter icon.png" alt="facebook" onclick="changeToHome()" width="50" height="50">
-        <img class="image" src="pinterest icon.png" alt="facebook" onclick="changeToHome()" width="50" height="50">
+        <p class="footer-text"><b>Pizza Paradise</b></p>
+        <img class="image" style="float:right" src="facebook icon.png" alt="facebook">
+        <img class="image" style="float:right" src="twitter icon.png" alt="twitter">
     </div>
 
     <script src="Script.js"></script>
