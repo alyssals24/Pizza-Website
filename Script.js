@@ -1,7 +1,7 @@
 // JavaScript source code
 let pages = ["homeContent", "menuContent", "aboutContent"];
 let pizzaNames = ["Cheese pizza", "Hawaiian pizza", "Pepperoni pizza", "Supreme pizza"];
-let pizzaImages = ["cheese pizza.png", "hawaiian pizza.png", "pepperoni pizza 2.png", "supreme pizza 2.png"];
+let pizzaImages = ["cheese pizza.png", "hawaiian pizza.png", "pepperoni pizza.png", "supreme pizza.png"];
 
 var myIndex = 0;
 carousel();
