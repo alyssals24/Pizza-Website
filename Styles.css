@@ -4,7 +4,7 @@
 body {
     background-image: url('background.png');
     background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     color: black;
     margin: 0;
     text-align: center;
