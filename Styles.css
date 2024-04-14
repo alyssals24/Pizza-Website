@@ -12,14 +12,6 @@ body {
     font-family: 'Cabin', sans-serif;
 }
 
-.backgroundImage {
-    background-image: url('pizza background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: black;
-    margin: 0;
-}
-
 .pageTitle {
     text-align: center;
     font-family: 'Dancing Script', cursive;
